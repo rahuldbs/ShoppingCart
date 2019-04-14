@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    padding: 15px 10px;
+    border-top: 1px solid #ccc;
+
+}
+
+.text-gray {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.text-black {
+    color: #000000;
+}
+
+.separator {
+    border: 3px solid #cccccc;
+}
+
+.cart-flex-6 {
+    flex: 6;
+}
+
+.cart-flex-1 {
+    flex: 1;
+}

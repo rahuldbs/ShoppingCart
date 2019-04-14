@@ -1,0 +1,20 @@
+<div class="container" *ngFor="let item of items">
+  <div class="item-details">
+      <img src="../../../assets/T{{item.p_id}}.jpg" alt="shirt">
+      <div class="item-desc">
+        <div class="cart-flex-1">
+            <div class="item-full-desc spcae-left">{{item.p_variation + " " + item.p_name | uppercase}}</div>
+            <div class="spcae-left">Style #: {{item.p_style}}</div>
+            <div class="spcae-left">Colour: {{item.p_selected_color.name}}</div>
+        </div>
+        <div class="item-actions">
+          <button mat-button (click)="openEditDialog(item)">EDIT</button>
+          <button mat-button>REMOVE</button>
+          <button mat-button>SAVE FOR LATER</button>
+        </div>
+      </div>
+  </div>
+  <div class="cart-flex-1">{{item.p_selected_size.code}}</div>
+  <div class="item-qty cart-flex-1">{{item.p_quantity}}</div>
+  <div class="cart-flex-1"><span>{{item.c_currency}} </span>{{item.p_price}}</div>
+</div>

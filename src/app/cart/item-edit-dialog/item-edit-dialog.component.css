@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.separator {
+    border: 3px solid #cccccc;
+    width: 70%;
+    margin: 20px 0px;
+}
+
+.item-title {
+    font-size: 35px;
+    color: #000000;
+    padding-bottom: 15px;
+}
+
+.content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+img {
+    height: 100%;
+    width: 70%;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.select-box {
+    margin: 15px 0px;
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.color-box {
+    width: 30px;
+    height: 20px;
+    margin: 6px 0px;
+}
